@@ -1,52 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-body{
-    margin: 0;
-    background-color: #1e2c36;
-    color: #eee;
-    font-family: Poppins;
-   
-    
-}
 
-
-.navbar{
-    background-color: #a01414;
-    overflow: hidden;
-    position: absolute;
-    z-index: 100;
-    width: 100%;
-
-}
-
-.navbar a {
-    float: right;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
-    
-}
-
-.navbar a:hover {
-    background-color: #ddd;
-    color: black;
-}
 .carousel{
     height: 85vh;
-    width: 100vw;
+    width: 95vw;
     overflow: hidden;
 
 }
+body{
+    margin-right: 12px;
+}
 .carousel .list .item{
-    width: 100%;
+    width: 95%;
     height: 85vh;
     position:absolute;
     inset: 0 0 0 0;
 }
 
 .carousel .list .item img{
-    width: 100%;
+    width: 95%;
     height: 85vh;
     object-fit:fill;
 }
@@ -110,7 +80,7 @@ body{
 .thumbnail{
     position: absolute;
     bottom: 110px;
-    left: 50%;
+    left: 40%;
     width: max-content;
     z-index: 100;
     display: flex;
@@ -123,7 +93,7 @@ body{
     position: relative;
 }
 .thumbnail .item img{
-    width: 100%;
+    width: 95%;
     height: 100%;
     object-fit: cover;
     border-radius: 20px;
@@ -173,7 +143,7 @@ body{
 /* animation */
 .carousel .list .item:nth-child(1){
     z-index: 10;
-    position: relative;
+    position: absolute;
 }
 
 /* animation text in first item */
@@ -224,7 +194,7 @@ body{
     to{
         bottom: 0;
         left: 0;
-        width: 100%;
+        width: 95%;
         height: 85vh;
         border-radius: 0;
         margin-bottom: -50px;
@@ -334,3 +304,46 @@ body{
         font-size: 30px;
     }
 }
+/*
+.card {
+
+    width: 100%;
+    height: 300px;
+    display: flex;
+    gap: 3px 2px;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 5px 0;
+    margin-top: 90px;
+
+}
+
+.card_img:hover img {
+    transform: translateY(-20px);
+
+}
+
+.card_img img {
+    border-radius: 15px;
+    width: 70%;
+    height: 40vb;
+    vertical-align: middle;
+}
+
+.card .card_text a {
+    text-decoration: none;
+    color: white;
+}
+
+.card .card_text {
+    width: 75%;
+    height: 20%;
+}
+
+.card .column {
+    flex: 1;
+    margin: 2px;
+    padding: 5px;
+
+}
+*/

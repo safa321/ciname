@@ -8,18 +8,8 @@
 <link rel="stylesheet" href="style.css">
 
 <body>
-    <div class="navbar">
-        <a href="index.html">
-            الصفحة الرئيسية
-        </a>
+<?php include_once('./navbar.php'); ?>
 
-        <a href="card.html">
-            الكل   
-        </a> 
-        <a href="all.html">
-            دراما       
-    </a>
-    </div>
     <div id="video-container">
         <video id="video-player" controls>
             

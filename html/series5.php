@@ -8,22 +8,12 @@
 <link rel="stylesheet" href="style.css">
 
 <body>
-    <div class="navbar">
-        <a href="index.html">
-            الصفحة الرئيسية
-        </a>
+<?php include_once('./navbar.php'); ?>
 
-        <a href="card.html">
-            الكل   
-        </a> 
-        <a href="all.html">
-            دراما       
-    </a>
-    </div>
     <div id="video-container">
         <video id="video-player" controls>
 
-            <source src="../video/series4/video1.mp4" type="video/mp4" width="100%">
+            <source src="../video/series5/video1.mp4" type="video/mp4" width="100%">
         </video>
 
     </div>
@@ -32,35 +22,35 @@
 
         <div class="introu_contant">
             <div class="contant">
-                <p> اخواتي </p>
-                <p>2021,دراما  </p>
+                <p>بنات صالح</p>
+                <p>2020,دراما</p>
                 <p>
-                    تدور أحداث هذا المسلسل حول النضال المؤلم والمستمر لهؤلاء الأشقاء الأربعة الذين لم يتبقى لهم إلا بعضهم البعض بعد فقدانهم لوالديهم في تسلسل أحداث مؤسف
+                    أم تتولى رعاية بناتها الخمس، بعد دخول والدهن السجن في جريمة قتل، وتطلب منه الطلاق وتخبر بناتها أن والدهن قد توفي، وتتزوج برجل ثري، وتتشابك الأحداث بعد خروج الأب من السجن بعد مرور سنوات
                 </p>
 
             </div>
         </div>
         <div class="introu_img">
             <div class="introu_img">
-                <img src="../image/13.jpg">
+                <img src="../image/7.jpg">
             </div>
         </div>
     </div>
 
     <div class="tab">
-        <div class="series4">
-            <div class="card_img_series4">
+        <div class="series5">
+            <div class="card_img_series5">
 
-                <img src="../image/13.jpg" onclick="changeVideo('../video/series4/video1.mp4')">
+                <img src="../image/7.jpg" onclick="changeVideo('../video/series5/video1.mp4')">
             </div>
             <div class="card_text">
                 <p>الحلقة 1 </p>
 
             </div>
         </div>
-        <div class="series4">
-            <div class="card_img_series4">
-                <img src="../image/13.jpg" onclick="changeVideo('../video/series4/video2.mp4')">
+        <div class="series5">
+            <div class="card_img_series5">
+                <img src="../image/7.jpg" onclick="changeVideo('../video/series5/video2.mp4')">
             </div>
             <div class="card_text">
                 <p>الحلقة 2 </p>
@@ -68,27 +58,27 @@
             </div>
         </div>
 
-        <div class="series4">
-            <div class="card_img_series4">
-                <img src="../image/13.jpg" onclick="changeVideo('../video/series4/video3.mp4')">
+        <div class="series5">
+            <div class="card_img_series5">
+                <img src="../image/7.jpg" onclick="changeVideo('../video/series5/video3.mp4')">
             </div>
             <div class="card_text">
                 <p>الحلقة 3 </p>
 
             </div>
         </div>
-        <div class="series4">
-            <div class="card_img_series4">
-                <img src="../image/13.jpg" onclick="changeVideo('../video/series4/video4.mp4')" />
+        <div class="series5">
+            <div class="card_img_series5">
+                <img src="../image/7.jpg" onclick="changeVideo('../video/series5/video4.mp4')" />
             </div>
             <div class="card_text">
                 <p>الحلقة 4 </p>
 
             </div>
         </div>
-        <div class="series4">
-            <div class="card_img_series4">
-                <img src="../image/13.jpg" onclick="changeVideo('../video/series4/video5.mp4')" />
+        <div class="series5">
+            <div class="card_img_series5">
+                <img src="../image/7.jpg" onclick="changeVideo('../video/series5/video5.mp4')" />
             </div>
             <div class="card_text">
                 <p>الحلقة 5 </p>
@@ -96,9 +86,9 @@
             </div>
         </div>
 
-        <div class="series4">
-            <div class="card_img_series4">
-                <img src="../image/13.jpg" onclick="changeVideo('../video/series4/video6.mp4')" />
+        <div class="series5">
+            <div class="card_img_series5">
+                <img src="../image/7.jpg" onclick="changeVideo('../video/series5/video6.mp4')" />
             </div>
             <div class="card_text">
                 <p>الحلقة 6 </p>
@@ -106,18 +96,18 @@
             </div>
         </div>
 
-        <div class="series4">
-            <div class="card_img_series4">
-                <img src="../image/13.jpg" onclick="changeVideo('../video/series4/video7.mp4')" />
+        <div class="series5">
+            <div class="card_img_series5">
+                <img src="../image/7.jpg" onclick="changeVideo('../video/series5/video7.mp4')" />
             </div>
             <div class="card_text">
                 <p>الحلقة 7 </p>
 
             </div>
         </div>
-        <div class="series4">
-            <div class="card_img_series4">
-                <img src="../image/13.jpg" onclick="changeVideo('../video/series4/video8.mp4')" />
+        <div class="series5">
+            <div class="card_img_series5">
+                <img src="../image/7.jpg" onclick="changeVideo('../video/series5/video8.mp4')" />
             </div>
             <div class="card_text">
                 <p>الحلقة 8 </p>
@@ -176,11 +166,11 @@
         <div class="column">
             <div class="card_img">
 
-                <a href="series5.html"> <img src="../image/7.jpg"></a>
+                <a href="series2.html"><img src="../image/series2.jpg"></a>
             </div>
             <div class="card_text">
-                <p>بنات صالح</p>
-                <p>2020,دراما</p>
+                <p>خان الذهب </p>
+                <p>2023,دراما</p>
             </div>
         </div>
         <div class="column">
@@ -270,7 +260,7 @@
 
     }
 
-    .tab .series4 .card_img_series4 img {
+    .tab .series5 .card_img_series5 img {
         border-radius: 15px;
         width: 100px;
         height: 80px;
@@ -280,7 +270,7 @@
 
 
 
-    .tab .series4 {
+    .tab .series5 {
         margin: 5px;
         text-align: right;
         width: 150px;

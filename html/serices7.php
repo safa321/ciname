@@ -8,23 +8,12 @@
 <link rel="stylesheet" href="style.css">
 
 <body>
-    <div class="navbar">
-        <a href="index.html">
-            الصفحة الرئيسية
-        </a>
+<?php include_once('./navbar.php'); ?>
 
-        <a href="card.html">
-            الكل   
-        </a> 
-        <a href="all.html">
-            دراما       
-    </a>
-    </div>
     <div id="video-container">
         <video id="video-player" controls>
 
-            <source src="../video/series1/video.mp4" type="video/mp4" width="100%">
-
+            <source src="video1.mp4" type="video/mp4" width="100%">
         </video>
 
     </div>
@@ -33,34 +22,34 @@
 
         <div class="introu_contant">
             <div class="contant">
-                <p>حيرة</p>
-                <p>2022,دراما</p>
-                <p>في حكاية يتخللها الحب والانتقام، يتوجب على عاشقين مواجهة مجتمع قاسٍ، ووالد متسلط، عازم على منع
-                    زواجهما</p>
+                <p>الثمن </p>
+                <p>2023,دراما</p>
+                <p>
+                    تلجأ أرملة لخيارها الوحيد المتبقي لتغطية تكاليف علاج ابنتها من السرطان، وهو أن تطلب المال من مديرها الذي يشترط عليها تمضية ليلة واحدة معه.                </p>
 
             </div>
         </div>
         <div class="introu_img">
             <div class="introu_img">
-                <img src="../image/8.jpg">
+                <img src="../image/12.jpg">
             </div>
         </div>
     </div>
 
     <div class="tab">
-        <div class="series1">
-            <div class="card_img_series1">
+        <div class="series7">
+            <div class="card_img_series7">
 
-                <img src="../image/series1/1.jpg" onclick="changeVideo('../video/series1/video.mp4')">
+                <img src="../image/12.jpg" onclick="changeVideo('video1.mp4')">
             </div>
             <div class="card_text">
                 <p>الحلقة 1 </p>
 
             </div>
         </div>
-        <div class="series1">
-            <div class="card_img_series1">
-                <img src="../image/series1/2.jpg" onclick="changeVideo('../video/series1/video2.mp4')">
+        <div class="series7">
+            <div class="card_img_series7">
+                <img src="../image/12.jpg" onclick="changeVideo('video2.mp4')">
             </div>
             <div class="card_text">
                 <p>الحلقة 2 </p>
@@ -68,27 +57,27 @@
             </div>
         </div>
 
-        <div class="series1">
-            <div class="card_img_series1">
-                <img src="../image/series1/3.jpg" onclick="changeVideo('../video/series1/video3.mp4')">
+        <div class="series7">
+            <div class="card_img_series7">
+                <img src="../image/12.jpg" onclick="changeVideo('video3.mp4')">
             </div>
             <div class="card_text">
                 <p>الحلقة 3 </p>
 
             </div>
         </div>
-        <div class="series1">
-            <div class="card_img_series1">
-                <img src="../image/series1/4.jpg" onclick="changeVideo('../video/series1/video4.mp4')" />
+        <div class="series7">
+            <div class="card_img_series7">
+                <img src="../image/12.jpg" onclick="changeVideo('video4.mp4')" />
             </div>
             <div class="card_text">
                 <p>الحلقة 4 </p>
 
             </div>
         </div>
-        <div class="series1">
-            <div class="card_img_series1">
-                <img src="../image/series1/5.jpg" onclick="changeVideo('../video/series1/video5.mp4')" />
+        <div class="series7">
+            <div class="card_img_series7">
+                <img src="../image/12.jpg" onclick="changeVideo('video5.mp4')" />
             </div>
             <div class="card_text">
                 <p>الحلقة 5 </p>
@@ -96,9 +85,9 @@
             </div>
         </div>
 
-        <div class="series1">
-            <div class="card_img_series1">
-                <img src="../image/series1/6.jpg" onclick="changeVideo('../video/series1/video6.mp4')" />
+        <div class="series7">
+            <div class="card_img_series7">
+                <img src="../image/12.jpg" onclick="changeVideo('video6.mp4')" />
             </div>
             <div class="card_text">
                 <p>الحلقة 6 </p>
@@ -106,52 +95,24 @@
             </div>
         </div>
 
-        <div class="series1">
-            <div class="card_img_series1">
-                <img src="../image/series1/img7.jpg" onclick="changeVideo('../video/series1/video7.mp4')" />
+        <div class="series7">
+            <div class="card_img_series7">
+                <img src="../image/12.jpg" onclick="changeVideo('video7.mp4')" />
             </div>
             <div class="card_text">
                 <p>الحلقة 7 </p>
 
             </div>
         </div>
-        <div class="series1">
-            <div class="card_img_series1">
-                <img src="../image/series1/img8.jpg" onclick="changeVideo('../video/series1/video8.mp4')" />
+        <div class="series7">
+            <div class="card_img_series7">
+                <img src="../image/12.jpg" onclick="changeVideo('video8.mp4')" />
             </div>
             <div class="card_text">
                 <p>الحلقة 8 </p>
 
             </div>
         </div>
-        <div class="series1">
-            <div class="card_img_series1">
-                <img src="../image/series1/img9.jpg" onclick="changeVideo('../video/series1/video9.mp4')" />
-            </div>
-            <div class="card_text">
-                <p>الحلقة 9 </p>
-
-            </div>
-        </div>
-        <div class="series1">
-            <div class="card_img_series1">
-                <img src="../image/series1/img10.jpg" onclick="changeVideo('../video/series1/video10.mp4')" />
-            </div>
-            <div class="card_text">
-                <p>الحلقة 10 </p>
-
-            </div>
-        </div>
-        <div class="series1">
-            <div class="card_img_series1">
-                <img src="../image/series1/img11.jpg" onclick="changeVideo('../video/series1/video11.mp4')" />
-            </div>
-            <div class="card_text">
-                <p>الحلقة 11 </p>
-
-            </div>
-        </div>
-
     </div>
     <h3>قد ترغب بالمشاهدة المزيد </h3>
     <div class="card" align="center">
@@ -173,11 +134,12 @@
         <div class="column">
             <div class="card_img">
 
-                <a href="series2.html"><img src="../image/series2.jpg"></a>
+                <a href="series1.html"> <img src="../image/8.jpg"></a>
             </div>
             <div class="card_text">
-                <p>خان الذهب </p>
-                <p>2023,دراما</p>
+                <p>
+                    حيرة </p>
+                <p>2022,دراما</p>
             </div>
         </div>
         <div class="column">
@@ -193,7 +155,7 @@
         <div class="column">
             <div class="card_img">
 
-                <a href=".html"> <img src="../image/6.jpg"></a>
+                <a href=".html"> <img src="../image/12.jpg"></a>
             </div>
             <div class="card_text">
                 <p>عروس بيروت </p>
@@ -203,11 +165,11 @@
         <div class="column">
             <div class="card_img">
 
-                <a href="series5.html"> <img src="../image/7.jpg"></a>
+                <a href="series2.html"><img src="../image/series2.jpg"></a>
             </div>
             <div class="card_text">
-                <p>بنات صالح</p>
-                <p>2020,دراما</p>
+                <p>خان الذهب </p>
+                <p>2023,دراما</p>
             </div>
         </div>
         <div class="column">
@@ -234,7 +196,7 @@
 <style>
     h3 {
         text-align: right;
-        margin-right: 12px;
+        margin-right: 25px;
     }
 
     .contant {
@@ -260,16 +222,18 @@
         background-color: black;
     }
 
-
+    hr {
+        color: cornflowerblue;
+    }
 
     .introu {
         margin-top: 6px;
         margin-bottom: 10px;
-        padding: 6px;
+
         width: 98%;
         height: 180px;
         display: flex;
-        gap: -2px 12px;
+        gap: 15px 2px;
         flex-flow: row wrap;
         justify-content: right;
     }
@@ -277,7 +241,6 @@
     .introu .introu_img img {
         height: 180px;
         width: 200px;
-        margin-left: 5px;
     }
 
     .tab {
@@ -288,14 +251,15 @@
         border: 2px solid;
         border-color: #1e2c36;
         display: flex;
-        gap: 15px 8px;
+        gap: 15px 2px;
         flex-flow: row;
-        margin: 0px 2px;
-        margin-bottom: 70px;
+
+        margin: 0px 4px;
+        margin-bottom: 80px;
 
     }
 
-    .tab .series1 .card_img_series1 img {
+    .tab .series7 .card_img_series7 img {
         border-radius: 15px;
         width: 100px;
         height: 80px;
@@ -305,10 +269,10 @@
 
 
 
-    .tab .series1 {
-        margin: 2px;
+    .tab .series7 {
+        margin: 5px;
         text-align: right;
-        width: 100px;
+        width: 150px;
         height: 100px;
     }
 </style>

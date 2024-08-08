@@ -1,4 +1,5 @@
 //step 1: get DOM
+/*
 let nextDom = document.getElementById('next');
 let prevDom = document.getElementById('prev');
 
@@ -27,6 +28,58 @@ let runNextAuto = setTimeout(() => {
 function showSlider(type){
     let  SliderItemsDom = SliderDom.querySelectorAll('.carousel .list .item');
     let thumbnailItemsDom = document.querySelectorAll('.carousel .thumbnail .item');
+    
+    if(type === 'next'){
+        SliderDom.appendChild(SliderItemsDom[0]);
+        thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
+        carouselDom.classList.add('next');
+    }else{
+        SliderDom.prepend(SliderItemsDom[SliderItemsDom.length - 1]);
+        thumbnailBorderDom.prepend(thumbnailItemsDom[thumbnailItemsDom.length - 1]);
+        carouselDom.classList.add('prev');
+    }
+    clearTimeout(runTimeOut);
+    runTimeOut = setTimeout(() => {
+        carouselDom.classList.remove('next');
+        carouselDom.classList.remove('prev');
+    }, timeRunning);
+
+    clearTimeout(runNextAuto);
+    runNextAuto = setTimeout(() => {
+        next.click();
+    }, timeAutoNext)
+
+}
+*/
+
+let nextDom = document.getElementById('next');
+let prevDom = document.getElementById('prev');
+
+
+let carouselDom = document.querySelector('.slider');
+let SliderDom = carouselDom.querySelector('.slider .list');
+let thumbnailBorderDom = document.querySelector('.slider .boxslider');
+let thumbnailItemsDom = thumbnailBorderDom.querySelectorAll(' .boxitem');
+let timeDom = document.querySelector('.slider .time');
+
+thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
+let timeRunning = 3000;
+let timeAutoNext = 7000;
+
+nextDom.onclick = function(){
+    showSlider('next');    
+}
+
+prevDom.onclick = function(){
+    showSlider('prev');    
+}
+let runTimeOut;
+let runNextAuto = setTimeout(() => {
+    next.click();
+}, timeAutoNext)
+function showSlider(type){
+    let  SliderItemsDom = SliderDom.querySelectorAll('.slider .list .item');
+    let thumbnailItemsDom = document.querySelectorAll('.slider .boxslider  .boxitem');
     
     if(type === 'next'){
         SliderDom.appendChild(SliderItemsDom[0]);
