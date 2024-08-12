@@ -17,7 +17,7 @@
     inset: 0 0 0 0;
 }
 .slider{
-    overflow: visible;
+    overflow: hidden;
     height: 500px;
     width: 95vw;
     position: relative;
@@ -127,7 +127,7 @@
 .slider.next .list .item:nth-child(1) img{
     width: 150px;
     height: 220px;
-    position: absolute;
+    position: relative;
     bottom: 50px;
     left: 50%;
     object-fit: fill;

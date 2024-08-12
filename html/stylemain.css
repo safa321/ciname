@@ -5,9 +5,7 @@
     overflow: hidden;
 
 }
-body{
-    margin-right: 12px;
-}
+
 .carousel .list .item{
     width: 95%;
     height: 85vh;

@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
-
-</head>
-
-<body>
     <div class="navbar">
         <div class="right">
 
@@ -55,6 +44,3 @@
     </div>
     <script type="text/javascript" src="./card.js"></script>
     
-</body>
-
-</html>
