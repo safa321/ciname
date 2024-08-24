@@ -8,12 +8,56 @@
 <link rel="stylesheet" href="style.css">
 
 <body>
-<?php include_once('./navbar.php'); ?>
 
+    <div class="navbar">
+        <div class="right">
+
+            <a href="homepage.html">
+                الصفحة الرئيسية
+            </a>
+
+            <div class="dropdown">
+                <button class="dropbtn">اصناف</button>
+                <div class="dropdown-content">
+                    <a href="#">دراما</a>
+                    <a href="#"> اكشن</a>
+                    <a href="#"> رسوم متحركة</a>
+                </div>
+            </div>
+
+        </div>
+      <div class="search">
+    <form id="searchForm">
+              <input class="form-control" list="browsers" name="browser" id="browser">
+                <datalist id="browsers">
+                    <option value="حيرة">
+                    <option value="بنات صالح">
+                    <option value="ستيلتو">
+                    <option value="باي ذنب قتلت">
+                    <option value="عدنان ولينا">
+                </datalist>    
+                <button type="submit" class="btn btn-primary mt-3">بحث</button>
+              </form>
+        </div>
+        <div class="left">
+            <a href="all.html">
+                انشاء حساب
+            </a>
+            <a href="login.html">
+                تسجيل دخول
+            </a>
+
+        </div>
+        <div id="changemode">
+            <button type="button" id="backmode"></button>
+        </div>
+    </div>
+    <script type="text/javascript" src="./card.js"></script>
+    
     <div id="video-container">
         <video id="video-player" controls>
 
-            <source src="../video/series2/video1.mp4" type="video/mp4" width="100%">
+            <source src="video1.mp4" type="video/mp4" width="100%">
         </video>
 
     </div>
@@ -22,36 +66,34 @@
 
         <div class="introu_contant">
             <div class="contant">
-                <p>خان الذهب</p>
+                <p>الثمن </p>
                 <p>2023,دراما</p>
-                <p>تنقلب حياة شاب على وشك أن يصبح أبا رأسا على عقب عندما يتسبب خبر حمل زوجته بإطلاق سلسلة من الأحداث
-                    المأساوية دون قصد.
-
-                </p>
+                <p>
+                    تلجأ أرملة لخيارها الوحيد المتبقي لتغطية تكاليف علاج ابنتها من السرطان، وهو أن تطلب المال من مديرها الذي يشترط عليها تمضية ليلة واحدة معه.                </p>
 
             </div>
         </div>
         <div class="introu_img">
             <div class="introu_img">
-                <img src="../image/series2.jpg">
+                <img src="../image/12.jpg">
             </div>
         </div>
     </div>
 
     <div class="tab">
-        <div class="series2">
-            <div class="card_img_series2">
+        <div class="series7">
+            <div class="card_img_series7">
 
-                <img src="../image/series2/1.jpg" onclick="changeVideo('../video/series2/video1.mp4')">
+                <img src="../image/12.jpg" onclick="changeVideo('video1.mp4')">
             </div>
             <div class="card_text">
                 <p>الحلقة 1 </p>
 
             </div>
         </div>
-        <div class="series2">
-            <div class="card_img_series2">
-                <img src="../image/series2/2.jpg" onclick="changeVideo('../video/series2/video2.mp4')">
+        <div class="series7">
+            <div class="card_img_series7">
+                <img src="../image/12.jpg" onclick="changeVideo('video2.mp4')">
             </div>
             <div class="card_text">
                 <p>الحلقة 2 </p>
@@ -59,27 +101,27 @@
             </div>
         </div>
 
-        <div class="series2">
-            <div class="card_img_series2">
-                <img src="../image/series2/3.jpg" onclick="changeVideo('../video/series2/video3.mp4')">
+        <div class="series7">
+            <div class="card_img_series7">
+                <img src="../image/12.jpg" onclick="changeVideo('video3.mp4')">
             </div>
             <div class="card_text">
                 <p>الحلقة 3 </p>
 
             </div>
         </div>
-        <div class="series2">
-            <div class="card_img_series2">
-                <img src="../image/series2/4.jpg" onclick="changeVideo('../video/series2/video4.mp4')" />
+        <div class="series7">
+            <div class="card_img_series7">
+                <img src="../image/12.jpg" onclick="changeVideo('video4.mp4')" />
             </div>
             <div class="card_text">
                 <p>الحلقة 4 </p>
 
             </div>
         </div>
-        <div class="series2">
-            <div class="card_img_series2">
-                <img src="../image/series2/5.jpg" onclick="changeVideo('../video/series2/video5.mp4')" />
+        <div class="series7">
+            <div class="card_img_series7">
+                <img src="../image/12.jpg" onclick="changeVideo('video5.mp4')" />
             </div>
             <div class="card_text">
                 <p>الحلقة 5 </p>
@@ -87,9 +129,9 @@
             </div>
         </div>
 
-        <div class="series2">
-            <div class="card_img_series2">
-                <img src="../image/series2/6.jpg" onclick="changeVideo('../video/series2/video6.mp4')" />
+        <div class="series7">
+            <div class="card_img_series7">
+                <img src="../image/12.jpg" onclick="changeVideo('video6.mp4')" />
             </div>
             <div class="card_text">
                 <p>الحلقة 6 </p>
@@ -97,48 +139,21 @@
             </div>
         </div>
 
-        <div class="series2">
-            <div class="card_img_series2">
-                <img src="../image/series2/7.jpg" onclick="changeVideo('../video/series2/video7.mp4')" />
+        <div class="series7">
+            <div class="card_img_series7">
+                <img src="../image/12.jpg" onclick="changeVideo('video7.mp4')" />
             </div>
             <div class="card_text">
                 <p>الحلقة 7 </p>
 
             </div>
         </div>
-        <div class="series2">
-            <div class="card_img_series2">
-                <img src="../image/series2/8.jpg" onclick="changeVideo('../video/series2/video8.mp4')" />
+        <div class="series7">
+            <div class="card_img_series7">
+                <img src="../image/12.jpg" onclick="changeVideo('video8.mp4')" />
             </div>
             <div class="card_text">
                 <p>الحلقة 8 </p>
-
-            </div>
-        </div>
-        <div class="series2">
-            <div class="card_img_series2">
-                <img src="../image/series2/9.jpg" onclick="changeVideo('../video/series2/video9.mp4')" />
-            </div>
-            <div class="card_text">
-                <p>الحلقة 9 </p>
-
-            </div>
-        </div>
-        <div class="series2">
-            <div class="card_img_series2">
-                <img src="../image/series2/11.jpg" onclick="changeVideo('../video/series2/video10.mp4')" />
-            </div>
-            <div class="card_text">
-                <p>الحلقة 10 </p>
-
-            </div>
-        </div>
-        <div class="series2">
-            <div class="card_img_series2">
-                <img src="../image/series2/10.jpg" onclick="changeVideo('../video/series2/video11.mp4')" />
-            </div>
-            <div class="card_text">
-                <p>الحلقة 11 </p>
 
             </div>
         </div>
@@ -184,7 +199,7 @@
         <div class="column">
             <div class="card_img">
 
-                <a href="film1.html"> <img src="../image/6.jpg"></a>
+                <a href=".html"> <img src="../image/12.jpg"></a>
             </div>
             <div class="card_text">
                 <p>عروس بيروت </p>
@@ -194,17 +209,17 @@
         <div class="column">
             <div class="card_img">
 
-                <a href="series5.html"> <img src="../image/7.jpg"></a>
+                <a href="series2.html"><img src="../image/series2.jpg"></a>
             </div>
             <div class="card_text">
-                <p>بنات صالح</p>
-                <p>2020,دراما</p>
+                <p>خان الذهب </p>
+                <p>2023,دراما</p>
             </div>
         </div>
         <div class="column">
             <div class="card_img">
 
-                <a href="film1.html"> <img src="../image/9.jpg"></a>
+                <a href=".html"> <img src="../image/9.jpg"></a>
             </div>
             <div class="card_text">
                 <p>ستيلتو</p>
@@ -214,14 +229,8 @@
     </div>
 
 </body>
-<script>
-    function changeVideo(newVideoSrc) {
-        var videoPlayer = document.getElementById('video-player');
-        videoPlayer.src = newVideoSrc;
-        videoPlayer.load();
-        videoPlayer.play();
-    }
-</script>
+    <script type="text/javascript" src="./app.js"></script>
+
 <style>
     h3 {
         text-align: right;
@@ -288,7 +297,7 @@
 
     }
 
-    .tab .series2 .card_img_series2 img {
+    .tab .series7 .card_img_series7 img {
         border-radius: 15px;
         width: 100px;
         height: 80px;
@@ -298,10 +307,10 @@
 
 
 
-    .tab .series2 {
+    .tab .series7 {
         margin: 5px;
         text-align: right;
-        width: 100px;
+        width: 150px;
         height: 100px;
     }
 </style>

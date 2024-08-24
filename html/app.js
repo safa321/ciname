@@ -54,3 +54,31 @@ function showSlider(type) {
         nextDom.click();
     }, timeAutoNext);
 }
+
+document.getElementById('searchForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the form from submitting the default way
+
+    // Get the selected value
+    const selectedValue = document.getElementById('browser').value;
+
+    // Redirect based on the selected value
+    if (selectedValue === "حيرة") {
+        window.location.href = "series1.html";
+    } else if (selectedValue === "بنات صالح") {
+        window.location.href = "series5.html";
+    } else if (selectedValue === "ستيلتو") {
+        window.location.href = "series9.html";
+    } else if (selectedValue === "باي ذنب قتلت") {
+        window.location.href = "film1.html";
+    } else if (selectedValue === "عدنان ولينا") {
+        window.location.href = "series.html";
+    } else {
+        alert('No matching page found for the selected option.');
+    }
+});
+function changeVideo(newVideoSrc) {
+    var videoPlayer = document.getElementById('video-player');
+    videoPlayer.src = newVideoSrc;
+    videoPlayer.load();
+    videoPlayer.play();
+}

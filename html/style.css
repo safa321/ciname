@@ -1,4 +1,6 @@
-
+body{
+    margin: 0;
+}
 .navbar {
     background-color: #a01414;
     direction: rtl;
@@ -188,7 +190,7 @@ select{
   }
   
   .slider .list .item img {
-    width: 100%;
+    width: 100vw;
     height: 85vh;
     object-fit: fill;
 }
@@ -203,21 +205,20 @@ select{
 .slider {
     overflow: hidden;
     height: 500px;
-    width: 98vw;
+    width: 98.88vw;
     position: relative;
 }
 
 
-.slider .list .item .buttons,
-.slider .list .item .buttons a {
+.slider .list .item .buttons {
 
-    margin-top: -256px;
-    margin-left: 170px;
+    margin-top: -277px;
+    margin-left: 161px;
     width: 75px;
     height: 32px;
     border: 2px solid #510a0a;
-    border-radius: 45px;
-    background-color: currentcolor;
+    border-radius: 35px;
+    background-color: #000;
 }
 
 /* thumbail */
@@ -283,46 +284,44 @@ select{
 }
 
 /* animation text in first item */
-
+.slider .list .item .buttons a {
+    padding: 10px;
+       color: white;
+     text-decoration: none;
+     transform: translateY(50px);
+     opacity: 0;
+     animation: showContent .5s 1s linear 1 forwards;
+    }
 .slider .list .item:nth-child(1) .buttons a {
-    transform: translateY(50px);
-    opacity: 0;
-    animation: showContent .5s 1s linear 1 forwards;
-    
-    margin-top: -256px;
-    margin-left: 170px;
-    width: 75px;
-    height: 32px;
+   
+    margin-top: -277px;
+        margin-left: 161px;
+  font-size: 19px;
     border: 2px solid #510a0a;
-    border-radius: 45px;
-    background-color: currentcolor;
+    border-radius: 35px;
+    background-color: #000;
 }
 
 @keyframes showContent {
     to {
         transform: translateY(0px);
         opacity: 1;
-    margin-top: -256px;
-    margin-left: 170px;
-    width: 75px;
-    height: 32px;
+    margin-top: -277px;
+    margin-left: 161px;
+    
     border: 2px solid #510a0a;
-    border-radius: 45px;
-    background-color: currentcolor;
+    border-radius: 35px;
+    background-color: #000;
     }
 }
 
 .slider .list .item:nth-child(1) .buttons {
     animation-delay: 1.8s !important;
-    
-
-    margin-top: -256px;
-    margin-left: 170px;
-    width: 75px;
-    height: 32px;
+    margin-top: -277px;
+    margin-left: 161px;
     border: 2px solid #510a0a;
     border-radius: 45px;
-    background-color: currentcolor;
+    background-color: #0000;
 }
 
 /* create animation when next click */
@@ -342,7 +341,7 @@ select{
     to {
         bottom: 0;
         left: 0;
-        width: 100%;
+        width: 100vw;
         height: 85vh;
         border-radius: 0;
         margin-bottom: -50px;
@@ -440,7 +439,7 @@ select{
     pointer-events: none;
 }
 
-.slider.prev .list .item:nth-child(2) .content .buttons {
+.slider.prev .list .item:nth-child(2)  .buttons {
     animation: contentOut 1.5s linear 1 forwards !important;
 }
 
@@ -450,11 +449,4 @@ select{
         filter: blur(20px);
         opacity: 0;
     }
-}
-
-@media screen and (max-width: 678px) {
-    .slider .list .item .content {
-        padding-right: 0;
-    }
-
 }
